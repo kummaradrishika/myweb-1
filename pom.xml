@@ -1,21 +1,21 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>in.shan5a6</groupId>
+	<groupId>in.javahome</groupId>
 	<artifactId>myweb</artifactId>
 	<packaging>war</packaging>
-	<version>0.12.11</version>
-	<name>myweb Maven Webapp</name>
+	<version>8.2.0</version>
+	<name>ava Home myweb</name>
 	<url>http://maven.apache.org</url>
 	<properties>
 		<docker.image.prefix>devops</docker.image.prefix>
 	</properties>	
 	<dependencies>
 		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>javax.servlet-api</artifactId>
-			<version>3.0.1</version>
-			<scope>provided</scope>
+			<groupId>junit</groupId>
+			<artifactId>jjunit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
 		</dependency>
 			<!-- Demo git -->
 		
@@ -42,13 +42,11 @@
 	
 	<distributionManagement>
 		<repository>
-			<id>nexusrepo</id>
-			<name>Releases</name>
-			<url>http://54.242.221.170:8081/repository/sample-releases/</url>
+			<id>nexusRepo</id>
+			 <url>http://54.242.221.170:8081/repository/sample-snapshot/</url>
 		</repository>
 		<snapshotRepository>
-			<id>nexus</id>
-			<name>Snapshot</name>
+			<id>nexusRepo</id>
 			<url>http://54.242.221.170:8081/repository/sample-snapshots/</url>
 		</snapshotRepository>
   	</distributionManagement>
